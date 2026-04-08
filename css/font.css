@@ -1,3 +1,6 @@
+
+/* 베이직 폰트 */
+
 @font-face {
     font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
@@ -59,4 +62,15 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
     font-weight: 900;
     font-display: swap;
+}
+
+
+
+
+/* 포인트 폰트 */
+
+.pf1 {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
