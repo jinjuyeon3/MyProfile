@@ -208,9 +208,11 @@ p{
 .popup {
     margin-top: 6rem;
     padding-top: 6rem;
-    background: url(../img/pattern-check.png) repeat 0 0,
-    url(../img/bg-popup.jpg) no-repeat 0 calc(100% - 185px) / 100% 480px;
+    background:
+        url(../img/pattern-check.png) repeat 0 0,
+        url(../img/bg-popup.jpg) no-repeat 0 calc(100% - 205px) / 100% 540px;
     padding-bottom: 6rem;
+    border-bottom: 1px solid var(--point-color);
 }
 .popup h2{
     font-size: 5rem;
@@ -224,9 +226,9 @@ p{
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-.popup h2+p+p{
+.popup h2+p+p {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
 }
 .popup-contents{
     display: flex;
@@ -235,6 +237,7 @@ p{
 .popup-text{
     width: 430px;
     color: #fff;
+    pointer-events: none;
 }
 .popup-station{
     width: calc(100% - 430px - 177px);
@@ -249,11 +252,137 @@ p{
 .popup-img-slider img {
     box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.2);
 }
+.popup-img-slider .swiper-wrapper{
+    transition-timing-function: linear;
+}
+.popup-txt-slider .swiper-slide{
+    background-color: var(--point-color);
+}
+.poster{
+    padding-top: 6rem;
+}
+.poster .common-frame{
+    display: flex;
+    align-items: flex-start;
+    gap: 172px;
+}
+.poster-title{
+    width: 734px;
+    position: sticky;
+    top: 6rem;
+    left: 0;
+}
+.poster-title h2{
+    font-size: 5rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+}
+.poster-title h2+p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.poster-list{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.poster-list>li{
+    display: flex;
+    gap: 107px;
+}
+.poster-list>li:nth-of-type(2n){
+    flex-direction: row-reverse;
+}
+.poster-list>li figure{
+    width: 500px;
+    flex-shrink: 0;
+}
+.poster-txt{
+    flex: 1;
+    padding-top: 6rem;
+}
+.poster-txt h3{
+    font-weight: var(--fw-bold);
+    margin-bottom: 4rem;
+}
+.poster-txt p{
+    margin-bottom: 1rem;
+}
+.banner{
+    padding: 6rem 0;
+    background-color: var(--point-color);
+    color: #fff;
+    text-align: center;
+    margin-top: 6rem;
+}
+.banner h2{
+    font-size: 5rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+}
+.banner h2+p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.banner h2+p+p{
+    margin-bottom: 3rem;
+}
+
 
 
 
 /* --------------- */
 /* 반응형 대응 코드 */
+@media (max-width: 1800px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100% - 205px) / 100% 480px;
+    }
+    .poster-title {
+        width: 600px;
+    }
+}
+
+
+@media (max-width: 1700px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100% - 205px) / 100% 460px;
+    }
+    .poster .common-frame{
+        gap: 3rem;
+    }
+    .poster-title {
+        width: initial;
+        flex: 1;
+    } 
+    .posterlist>li{
+        gap: 1rem;
+    }
+    .poster-list>li figure{
+        width: initial;
+        flex-shrink: initial;
+        flex: 4;
+    }
+    .poster-txt{
+        flex: 3;
+    }
+}
+
+
+
+@media (max-width: 1650px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 630px;
+    }
+}
+
+
 
 @media (max-width: 1600px){
     .exp-title {
@@ -273,6 +402,18 @@ p{
     .popup-station{
         width: calc((100% - 1rem)/2);
     }
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 536px;
+    }
+}
+
+
+@media (max-width: 1500px){
+    .poster-txt {
+        padding-top: 0;
+    }
 }
 
 
@@ -286,6 +427,51 @@ p{
         left: 0;
         top: 3rem;
     }
+    
+}
+
+
+
+@media (max-width: 1400px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 598px;
+    }
+    .poster-list>li{
+        flex-direction: column;
+    }
+    .poster-list>li:nth-of-type(2n){
+        flex-direction: column;
+    }
+    .poster-list>li {
+        gap: 2rem;
+    }
+    .poster-txt h3 {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media (max-width: 1300px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 575px;
+    }
+}
+
+
+
+
+@media (max-width: 1200px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 554px;
+    }
+    
 }
 
 
@@ -295,6 +481,15 @@ p{
     }
     .certi{
         grid-column: initial;
+    }
+}
+
+
+@media (max-width: 1030px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 538px;
     }
 }
 
@@ -312,6 +507,15 @@ p{
     }
     .pro-title{
         flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1010px){
+    .popup {
+        background:
+            url(../img/pattern-check.png) repeat 0 0,
+            url(../img/bg-popup.jpg) no-repeat 0 calc(100%) / 100% 495px;
     }
 }
 
@@ -369,6 +573,48 @@ p{
     }
     .popup-station{
         width: 100%;
+    }
+    .popup h2{
+        font-size: 2rem;
+    }
+    .popup h2+p{
+        font-size: 1.3rem;
+    }
+    .poster .common-frame {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .poster-title {
+        position: initial;
+        top: initial;
+        left: initial;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .poster-list>li figure {
+        text-align: center;
+    }
+    .poster-list>li {
+        text-align: center;
+    }
+    .poster-title h2{
+        font-size: 2rem;
+    }
+    .poster-title h2+p {
+        font-size: 1.3rem;
+    }
+    .banner h2{
+        font-size: 2rem;
+    }
+    .banner h2+p{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width:500px){
+    .popup h2+p+p {
+        margin-bottom: 6rem;
     }
 }
 
