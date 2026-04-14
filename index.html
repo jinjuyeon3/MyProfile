@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animation.css">
 
     <!-- 스와이퍼 js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -33,6 +34,7 @@
     <!-- 애니메이션 js -->
     <script src="./js/bbyong.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/obsever.js"></script>
 
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +43,7 @@
 
 </head>
 <body>
-    <!-- 메뉴 -->
+    <!-- 전체 메뉴 -->
     <div class="all-menu">
         <ul class="all-menu-list">
             <li><a href="#sec1">About Me</a></li>
@@ -67,6 +69,7 @@
     </div>
 
     <main>
+        <!-- 전체 메뉴 버튼 -->
         <div class="menu-sticky">
             <div class="btn-menu">
                 <img src="./img/btn-menu.svg" alt="전체 메뉴" class="btn-img">
@@ -78,7 +81,7 @@
             <div class="common-frame">
                 <div class="pro-title" id="sec1">
                     <section>
-                        <h2>Designing for Understanding</h2>
+                        <h2 class="ani1">Designing for Understanding</h2>
                     </section>
                     <section>
                         <h3>사용자의 이해를 중심으로
@@ -237,7 +240,7 @@
         <!-- 팝업 디자인 섹션 -->
         <div class="popup" id="sec3">
             <div class="common-frame">
-                <h2>Popup Designs</h2>
+                <h2 class="ani1">Popup Designs</h2>
                 <p class="pf2-r">{ Refined for Clarity }</p>
                 <p>가로 500px 기준의 레이아웃을 벤치마킹하여, 사용성과 가독성을 고려해 재구성한 팝업 디자인입니다.</p>
                 <div class="popup-contents">
@@ -372,9 +375,9 @@
                     </li>
                 </ul>
                 <div class="poster-title">
-                    <h2>Poster Designs</h2>
-                    <p class="pf2-r">{ Typography & Mood }</p>
-                    <p>타이포그래피와 여백을 중심으로,<br>감성과 메시지를 직관적으로 전달하도록 설계한 포스터 디자인입니다.</p>
+                    <h2 class="ani1">Poster Designs</h2>
+                    <p class="pf2-r ani1">{ Typography & Mood }</p>
+                    <p class="ani1">타이포그래피와 여백을 중심으로,<br>감성과 메시지를 직관적으로 전달하도록 설계한 포스터 디자인입니다.</p>
                 </div>
             </div>
         </div>
@@ -382,9 +385,9 @@
         <!-- 배너 디자인 섹션 -->
         <div class="banner" id="sec5">
             <div class="common-frame">
-                <h2>Banner Designs</h2>
-                <p class="pf2-r">{ Typography & Visual Impact }</p>
-                <p>타이포그래피와 컬러 대비를 중심으로, 메시지를 직관적으로 전달하는 히어로배너 디자인입니다.</p>
+                <h2 class="fade-up">Banner Designs</h2>
+                <p class="pf2-r fade-up">{ Typography & Visual Impact }</p>
+                <p class="fade-up">타이포그래피와 컬러 대비를 중심으로, 메시지를 직관적으로 전달하는 히어로배너 디자인입니다.</p>
                 <div class="swiper banner-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -414,9 +417,9 @@
         <!-- 상세페이지 디자인 섹션 -->
         <div class="detail" id="detail">
             <div class="common-frame">
-                <h2>Detail Pages</h2>
-                <p class="pf2-r">{ Product Detail & Conversion Focus }</p>
-                <p>AI를 활용한 이미지 생성과 카피라이팅 보조를 통해 정보 구조와 시각적 흐름을 설계하고,<br>포토샵, 일러스트레이터 등 디자인 툴을 사용하여 제품의 매력을 효과적으로 전달하기 위해 직접 제작한 상세페이지 디자인입니다.</p>
+                <h2 class="fade-up">Detail Pages</h2>
+                <p class="pf2-r fade-up">{ Product Detail & Conversion Focus }</p>
+                <p class="fade-up">AI를 활용한 이미지 생성과 카피라이팅 보조를 통해 정보 구조와 시각적 흐름을 설계하고,<br>포토샵, 일러스트레이터 등 디자인 툴을 사용하여 제품의 매력을 효과적으로 전달하기 위해 직접 제작한 상세페이지 디자인입니다.</p>
                 <div class="swiper detail-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
