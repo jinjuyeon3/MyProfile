@@ -509,14 +509,14 @@ p{
 .project-content h4+p{
     margin-bottom: 1.5rem;
 }
-.project-stikcy{
+.project-stikcy {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     position: sticky;
-    top: 1rem;
+    top: 2.5rem;
     font-weight: var(--fw-med);
 }
 .project-stikcy a{
@@ -540,7 +540,7 @@ p{
 .contact h1{
     font-size: calc(100vh / 7);
     font-weight: var(--fw-bold);
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     position: sticky;
     left: 0;
     top: 40vh;
@@ -555,6 +555,9 @@ p{
 .contact h3{
     font-weight: var(--fw-bold);
     margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+.contact figure{
     margin-top: 3rem;
 }
 .contact-menu{
@@ -573,6 +576,9 @@ p{
 .contact-menu a:hover{
     background-color: #fff;
     color: #000;
+}
+.pro-img img{
+    border-radius: 10px;
 }
 .menu-sticky{
     display: flex;
