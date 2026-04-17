@@ -551,6 +551,7 @@ p{
     font-weight: var(--fw-bold);
     margin-bottom: 3rem;
     margin-top: 3rem;
+    line-height: 140%;
 }
 .contact h3{
     font-weight: var(--fw-bold);
@@ -742,7 +743,9 @@ p{
         left: 0;
         top: 3rem;
     }
-    
+    .contact h1 {
+        position: initial;
+    }
 }
 
 
@@ -976,7 +979,7 @@ p{
         width: auto;
     }
     .contact h1 {
-        font-size: calc(100vh / 8);
+        font-size: calc(100vh / 17);
     }
     .contact h2 {
         font-size: 1.3rem;
