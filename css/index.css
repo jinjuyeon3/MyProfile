@@ -36,8 +36,8 @@ p{
     min-height: 700px;
     background: 
     /* linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 90%), */
-    url(../img/bg-hero3.png) no-repeat 50% 0% / cover;
-    color: #000;
+    url(../img/bg-hero4.jpg) no-repeat 50% 0% / cover;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
