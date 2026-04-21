@@ -642,7 +642,9 @@ p{
     gap: 1rem;
     /* padding: 20vh 0; */
 }
-
+.all-menu-list li:hover{
+    color: var(--point-color);
+}
 
 
 
