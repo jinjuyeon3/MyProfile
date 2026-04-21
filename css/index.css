@@ -645,7 +645,9 @@ p{
 .all-menu-list li:hover{
     color: var(--point-color);
 }
-
+.mo-br{
+    display: none;
+}
 
 
 
@@ -998,6 +1000,16 @@ p{
 @media (max-width:500px){
     .popup h2+p+p {
         margin-bottom: 6rem;
+    }
+}
+
+
+@media (max-width:370px){
+    .mo-br{
+        display: block;
+    }
+    .hero-txt1-right{
+        line-height: 140%;
     }
 }
 
